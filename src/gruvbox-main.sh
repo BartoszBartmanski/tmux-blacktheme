@@ -55,9 +55,15 @@ main() {
     # shellcheck disable=1091
     source "${CURRENT_DIR}/theme_gruvbox_dark.sh"
     ;;
-  dark256 | *)
+  dark256)
     # shellcheck disable=1091
     source "${CURRENT_DIR}/palette_gruvbox_dark256.sh"
+    # shellcheck disable=1091
+    source "${CURRENT_DIR}/theme_gruvbox_dark.sh"
+    ;;
+  black | *)
+    # shellcheck disable=1091
+    source "${CURRENT_DIR}/palette_black.sh"
     # shellcheck disable=1091
     source "${CURRENT_DIR}/theme_gruvbox_dark.sh"
     ;;
